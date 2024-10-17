@@ -1,13 +1,19 @@
 {
     "kubernetes":[
         {
-            "description": "Kubernetes unique Scan",
-            "prefix": "KUB1_",
+            "description": "organization 4urcloud",
+            "prefix": "KUBE1_",
             "rules": [
-                "kubernetesStatus",
-                "kubernetesConfigurations",
                 "kubernetesConsumptions"
             ]
+        }
+    ],
+    "save": [
+        {
+            "type": "postgres",
+            "name": "my_database",
+            "description": "Database to save the data",
+            "urlName": "postgres://yourDatabaseConnectionString"
         }
     ]
 }
